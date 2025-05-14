@@ -5,8 +5,7 @@
     font-style: normal;
   }
 .WWPcontainer {
-    display: flex;
-    align-items: center;
+    
     padding: 0px 0px;
     background-color: white;
     text-align: center;
@@ -22,6 +21,7 @@
   .WWPcardsection {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 40px;
