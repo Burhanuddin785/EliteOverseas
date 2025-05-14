@@ -1,0 +1,23 @@
+.OurCommitment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.OCheading{
+    font-family: 'Sansation-Bold', Helvetica;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.OCmatter{
+    font-family: 'Sansation-Rehular', Helvetica;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    max-width: 800px;
+    text-align: center;
+
+}

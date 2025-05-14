@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Sansation-Bold';
+    src: url('../../assets/fonts/Sansation-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.WWPcontainer {
+    padding: 0px 0px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .WWPHeading {
+    font-family: 'Sansation-Bold', Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #163057;
+    margin-bottom: 10px;
+  }
+  
+  .WWPcardsection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .WWPbtn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px  ;
+    height: 57px;
+  }
+  
+  .WWPbtn button {
+    background-color: #163057;
+    color: #F4CC0B;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Sansation-Regular', Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .WWPbtn button:hover {
+    background-color: #0f2542;
+  }
+  
+  @media (max-width: 768px) {
+    .WWPHeading {
+      font-size: 3rem;
+      padding: 0 16px;
+    }
+  
+    .WWPcardsection {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .WWPbtn {
+      padding: 0 16px 20px;
+    }
+  
+    .WWPbtn button {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+
+  @media (max-width: 480px){
+    .WWPbtn button {
+      font-size: 13px;
+      padding: 10px;
+    }
+    .WWPHeading {
+      font-size: 2.4rem;
+      padding: 0 12px;
+    }
+  }

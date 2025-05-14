@@ -1,0 +1,109 @@
+.anchors {
+  position: relative;
+  width: 100%;
+  height: 710px;
+  background-image: url('../../assets/pictures/IndiaMap.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.AncorHeading {
+  font-size: 3rem;
+  color: #F4CC0B;
+  font-family: 'Sansation-Bold', Helvetica;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Generic pin */
+.pin {
+  height: 100%;
+  width: auto;
+  max-height: 60px;
+}
+
+/* Container sizes and positioning in % */
+.pin-container1,
+.pin-container2,
+.pin-container3,
+.pin-container4,
+.pin-container5 {
+  position: absolute;
+  height: 60px;
+  width: 40px;
+  z-index: 1;
+}
+
+.pin-container1 { top: 3.5%; left: 14%; }
+.pin-container2 { top: 22%; left: 24%; }
+.pin-container3 { top: 26%; left: 25%; }
+.pin-container4 { top: 56%; left: 47%; }
+.pin-container5 { top: 80%; left: 43%; }
+
+/* Pin label */
+.pin-label {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  color: #F4CC0B;
+  font-family: 'Sansation-Bold', Helvetica;
+  font-size: 1.5rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.pin-container1:hover .pin-label,
+.pin-container2:hover .pin-label,
+.pin-container3:hover .pin-label,
+.pin-container4:hover .pin-label,
+.pin-container5:hover .pin-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+  .AncorHeading {
+    font-size: 1rem;
+  }
+
+  .pin-label {
+    font-size: 1.2rem;
+  }
+
+  .anchors {
+    height: 280px;
+  }
+  .pin{
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AncorHeading {
+    font-size: 1.5rem;
+  }
+
+  .pin-label {
+    font-size: 1rem;
+  }
+
+  .anchors {
+    height: 180px;
+  }
+  .pin{
+    max-height: 20px;
+  }
+}

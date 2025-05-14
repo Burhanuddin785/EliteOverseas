@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Sansation-Regular';
+    src: url('../../assets/fonts/Sansation-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.overview {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+    /* padding-top: 0; */
+    background-color: #0b3d5c; /* Optional: match your hero background */
+    background-image: url('../../assets/pictures/worldmap.jpeg'); /* adjust path */
+    background-size: cover;
+    opacity: 0.85;
+    background-position: center;
+    color: white;
+  }
+
+  
+  .overviewLogo {
+    width: 336px;
+    height: 257px;
+    margin-bottom: 0 !important;
+    background-image: url('../../assets/pictures/logo-white.png'); /* adjust path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    margin-bottom: 30px;
+    
+  }
+  
+  .overviewMatter {
+    font-family: 'Sansation-Regular', Helvetica;
+    max-width: 900px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    .overviewLogo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .overviewMatter {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overviewLogo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .overviewMatter {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      padding: 0 8px;
+    }
+  }

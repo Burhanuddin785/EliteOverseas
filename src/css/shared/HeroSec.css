@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Sansation-Regular';
+    src: url('../../assets/fonts/Sansation-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sansation-Bold';
+    src: url('../../assets/fonts/Sansation-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.heroSec {
+  
+    display: grid;
+    max-height: 505px;
+    grid-template-columns: 1fr 1fr;
+    background-image: url('../../assets/pictures/Heroimg.jpeg'); /* ✅ Replace with correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 80px; /* Compensate for fixed header */
+    top: 0;
+    left: 0;
+ 
+  }
+  
+  .leftAligned {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 12px; /* Fine-tune spacing between elements */
+  }
+  
+  .leftAligned > * {
+    margin: 0;           /* Remove default margins */
+    padding: 0;          /* Remove default padding */
+    line-height: 1.2;    /* Optional: reduce line spacing */
+  }
+
+  .heroTitle, .heroSubline, .heroBtn {
+    margin: 0;
+  }
+  
+  .heroTitle {
+    font-family: 'Sansation-Bold', Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    color: #163057  ;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heroSubline {
+    font-family: 'Sansation-Regular', Helvetica;
+    font-size: 33px;
+    color: #3F5475;
+  }
+  
+  .heroBtn {
+    background-color: #163057;
+    color: #F4CC0B;
+    padding: 12px 24px;
+    font-family: 'Sansation-Regular', Helvetica;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    width: fit-content;
+    cursor: pointer;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); */
+    transition: background 0.3s;
+  }
+  
+  .heroBtn:hover {
+    background-color: #1e4171;
+  }
+  
+  @media (max-width: 768px) {
+    .heroSec {
+        height: 40vh; /* ✅ Occupies half the viewport height */
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 20px;
+        background-position: center;
+        background-size: cover;
+      }
+  
+    .leftAligned {
+      align-items: center;
+      padding-left: 0;
+      gap: 16px;
+    }
+  
+    .heroTitle {
+      font-size: 32px;
+    }
+  
+    .heroSubline {
+      font-size: 20px;
+    }
+  
+    .heroBtn {
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heroSec {
+      height: 50vh; /* Slightly taller for small screens */
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 30px 16px;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .leftAligned {
+      align-items: center;
+      padding-left: 0;
+      gap: 14px;
+    }
+  
+    .heroTitle {
+      font-size: 24px;
+    }
+  
+    .heroSubline {
+      font-size: 16px;
+    }
+  
+    .heroBtn {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin: 0 auto;
+    }
+  }
+  
+  

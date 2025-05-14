@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Sansation-Bold';
+    src: url('../../assets/fonts/Sansation-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sansation-Regular';
+    src: url('../../assets/fonts/Sansation-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .card {
+    background-color: #163057;
+    border-radius: 8px;
+    width: 298px;
+    padding: 24px 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-icon {
+    margin-bottom: 16px;
+  }
+
+  .card-icon img{
+    height: 128px;
+    width: 128px;
+  }
+  
+  .card-head {
+    font-family: 'Sansation-Bold', Helvetica;
+    font-size: 32px;
+    color: #F4CC0B;
+    margin-bottom: 16px;
+  }
+  
+  .card-footer {
+    font-family: 'Sansation-Regular', Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #F4CC0B;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+      padding: 20px 16px;
+    }
+  
+    .card-head {
+      font-size: 24px;
+    }
+  
+    .card-footer {
+      font-size: 14px;
+    }
+  
+    .card-icon img {
+      height: 96px;
+      width: 96px;
+    }
+  }
+
+  @media (max-width: 480px){
+    .card {
+      width: 100%;
+      padding: 16px 12px;
+    }
+  
+    .card-head {
+      font-size: 20px;
+    }
+  
+    .card-footer {
+      font-size: 13px;
+    }
+  
+    .card-icon img {
+      height: 80px;
+      width: 80px;
+    }
+  }

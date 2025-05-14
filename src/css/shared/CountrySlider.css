@@ -1,0 +1,20 @@
+.CountrySlider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .CountrySlider{
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    .CountrySlider{
+        height: 60vh;
+    }
+}

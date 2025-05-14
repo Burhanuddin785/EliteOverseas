@@ -1,0 +1,122 @@
+.WhoWeAre {
+    display: flex;
+    width: 100%;
+    height: 538px;
+    overflow: hidden;
+  }
+  
+  .WWAleft {
+    width: 599px;
+    flex: 1;
+    position: absolute;
+    background-image: url('../../assets/pictures/EOWWA.jpeg');
+    height: 520px;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .WWAright {
+    flex: 1;
+    position: absolute;
+    width: 60%px;
+    left: 449px;
+    height: 520px;
+    background-image: url('../../assets/pictures/Rectangle16.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .WWAright h2 {
+    margin-left: 160px;
+    margin-right: 40px;
+    color: #f4cc0b;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: 'Sansation-Bold', sans-serif;
+  }
+  
+  .WWAright p {
+    margin-left: 160px;
+    margin-right: 40px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: 'Sansation-Regular', sans-serif;
+  }
+  @media screen and (max-width: 768px) {
+    .WhoWeAre {
+      flex-direction: column;
+      height: auto;
+      position: relative;
+      height: 50vh;
+    }
+  
+    .WWAleft{
+      height: 50vh;
+      width: 60vw;
+    }
+    .WWAright {
+      position: absolute  ;
+      left: 3 0%;
+      height: 50vh;
+      width: 70vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .WWAright {
+      padding: 0px 20px;
+    }
+  
+    .WWAright h2 {
+      top:0;
+      
+      font-size: 1.5rem;
+    }
+  
+    .WWAright p {
+      font-size: 0.7rem;
+    }
+  }
+  
+ 
+ @media screen and (max-width: 768px) {
+    .WhoWeAre {
+      flex-direction: column;
+      height: auto;
+      position: relative;
+      height: 50vh;
+    }
+  
+    .WWAleft{
+      height: 50vh;
+      width: 60vw;
+    }
+
+    .WWAright {
+      position: absolute  ;
+      left: 30%;
+      height: 50vh;
+      width: 70vw;
+    }
+  
+    .WWAright {
+      padding: 0px 20px;
+    }
+  
+    .WWAright h2 {
+      top:0;
+      
+      font-size: 1rem;
+    }
+  
+    .WWAright p {
+      font-size: 0.3rem;
+    }
+  }
