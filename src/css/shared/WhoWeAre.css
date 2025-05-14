@@ -95,14 +95,14 @@
     }
   
     .WWAleft{
-      height: 50vh;
+      height: 30vh;
       width: 60vw;
     }
 
     .WWAright {
       position: absolute  ;
       left: 30%;
-      height: 50vh;
+      height: 30vh;
       width: 70vw;
     }
   

@@ -83,14 +83,15 @@
     }
   
     .aboutHeading {
-      font-size: 1rem;
+      font-size: 1.5rem;
       letter-spacing: 2px;
       -webkit-text-stroke: 0.4px #0f1b3d;
       padding: 0 10px;
     }
   
     .about {
-      font-size: 0.5rem;
+      font-size: 1rem;
+      max-width: 60vw;
     }
   
     .textbg {
