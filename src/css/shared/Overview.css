@@ -6,6 +6,7 @@
 }
 .overview {
     display: flex;
+    height: 100vh;
     position: relative;
     z-index: 0;
     flex-direction: column;
@@ -68,5 +69,8 @@
       font-size: 0.85rem;
       line-height: 1.5;
       padding: 0 8px;
+    }
+    .overview{
+      height: 50vh;
     }
   }
