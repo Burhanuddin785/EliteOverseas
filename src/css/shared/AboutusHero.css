@@ -1,5 +1,7 @@
 .aboutus {
+    margin-top: -130px;
     position: relative;
+    z-index: 1;
     background-image: url('../../assets/pictures/AboutUs.png'); 
     background-size: cover;
     background-position: center;

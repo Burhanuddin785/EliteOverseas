@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../../css/shared/Header.css'
 
 const Header = ({logo, page}) => {
-    let [clicked, setClicked] = useState(page=="about" ? false : true);
+    let [clicked, setClicked] = useState(page==="about" ? false : true);
     useEffect(()=>{
       if(page==="about") setClicked(false);
       else setClicked(true);
